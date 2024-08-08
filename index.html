@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-box</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <main id="main">
+        <div id="first">
+            <nav>
+                <img src="Images/1.jpg" alt="" width="100" height="100" align="center">
+                <h3>Katie Holper</h3>
+                <br>
+                <ul id="dn">
+                    <li class="active" id="msg" onclick="message()">Messages</li>
+                    <li id="call" onclick="calls()">Video Calls</li>
+                    <li>Shared Files</li>
+
+                </ul>
+                <br>
+                <button id="cbtn" onclick="changeTheme()"> Change theme </button>
+                <ul id="bot">
+                    <li><i class="material-icons">person_outline</i> Profile</li>
+                    <li> <i class="material-icons">settings</i> Settings</li>
+                    <li><i class="material-icons">exit_to_app</i> Logout</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="second">
+            <div class="response">
+                <section id="ft">
+                    <img src="Images/1.jpg" alt="">
+                        <h4>Katie Holper</h4>
+                </section>
+                <section id="sec">
+                    <span onclick="message()"> Messages </span>
+                    <span onclick="calls()"> Video calls</span>
+                </section>
+            </div>
+            <div id="back">
+                <span class="material-icons icon">search</span>
+                <input type="search" placeholder="Search" id="search">
+            </div><br>
+            <label for="selectlist"> Sort By </label> &nbsp;
+            <select name="sort" id="sort">
+                <option value="mrecent">Most Recent</option>
+                <option value="name">Name</option>
+                <option value="date">Date</option>
+              </select>
+            <br>
+            <div class="div" id="dv">
+                <section class="act" id="one" onclick="first()">
+                    <img src="Images/2.jpg" alt="one">
+                    <div>
+                        <span class="font">Annie Zukerburg</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        3:48pm <br>
+                        
+                    </span>
+                </section>
+                <section id="two">
+                    <img src="Images/3.jpg" alt="one">
+                    <div>
+                        <span class="font">Laura Watson</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        3:25pm <br>
+                        <span id="round"> 4 </span>
+                    </span>
+                </section>
+                <section id="three">
+                    <img src="Images/4.jpg" alt="one">
+                    <div>
+                        <span class="font">Monica Perry</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        3:01pm <br>
+                        <span id="round"> 2 </span>
+                    </span>
+                </section>
+                <section id="Four">
+                    <img src="Images/5.jpg" alt="one">
+                    <div>
+                        <span class="font">Harry Kristen</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        2:56pm <br>
+                    </span>
+                </section>
+                <section id="Five">
+                    <img src="Images/8.jpg" alt="one">
+                    <div>
+                        <span class="font">Richard Taylor</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        2:32pm <br>
+                    </span>
+                </section>
+                <section id="Six">
+                    <img src="Images/7.jpg" alt="one">
+                    <div>
+                        <span class="font">Kate Moana</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        2:24pm <br>
+                    </span>
+                </section>
+                <section id="Seven">
+                    <img src="Images/3.jpg" alt="one">
+                    <div>
+                        <span class="font">Sam Brimstone</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        2:15pm <br>
+                    </span>
+                </section>
+                <section id="Eight">
+                    <img src="Images/8.jpg" alt="one">
+                    <div>
+                        <span class="font">Skye </span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        2:03pm <br>
+                    </span>
+                </section>
+                <section id="Nine">
+                    <img src="Images/6.png" alt="one">
+                    <div>
+                        <span class="font">Killjoy</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        1:25pm <br>
+                    </span>
+                </section>
+                <section id="ten">
+                    <img src="Images/3.jpg" alt="one">
+                    <div>
+                        <span class="font">Sage Yoru</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        12:08pm <br>
+                    </span>
+                </section>
+                <section id="eleven">
+                    <img src="Images/4.jpg" alt="one">
+                    <div>
+                        <span class="font">Astra</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        10:50am<br>
+                    </span>
+                </section>
+                <section id="twelve">
+                    <img src="Images/2.jpg" alt="one">
+                    <div>
+                        <span class="font">Rayna Killer</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        9:04am <br>
+                    </span>
+                </section>
+                <section id="thirteen">
+                    <img src="Images/7.jpg" alt="one">
+                    <div>
+                        <span class="font">Jett Flyer</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        12:10am<br>
+                    </span>
+                </section>
+                <section id="fourteen">
+                    <img src="Images/8.jpg" alt="one">
+                    <div>
+                        <span class="font">Viper Poison</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        11:15pm<br>
+                    </span>
+                </section>
+                <section id="fifteen">
+                    <img src="Images/5.jpg" alt="one">
+                    <div>
+                        <span class="font">Chember Sniper</span> <br>
+                        <span>Lorem ipsum, dolor sit amet</span>
+                    </div>
+                    <span align="center">
+                        11:15pm<br>
+                    </span>
+                </section>
+
+
+            </div>
+            <div id="video" class="video">
+                <div class="gr">
+                    <img src="Images/8.jpg" alt="sky" class="add">
+                    <span> Skye </span>
+                    <span>
+                    <span class="material-icons">call_received</span>
+                </div>
+                <div class="gr">
+                    <img src="Images/7.jpg" alt="jett" class="add">
+                    <span> Jett Flyer </span>
+                    <span class="material-icons">call_missed</span>
+                </div>
+                <div class="gr">
+                    <img src="Images/8.jpg" alt="skye" class="add">
+                    <span> Skye </span>
+                    <span class="material-icons">call_missed</span>
+                </div>
+                <div class="gr">
+                    <img src="Images/6.png" alt="kj" class="add">
+                    <span> Killjoy </span>
+                    <span class="material-icons">call_received</span>
+                </div>
+                <div class="gr">
+                    <img src="Images/7.jpg" alt="jett" class="add">
+                    <span> Jett Flyer </span>
+                    <span class="material-icons">call_missed</span>
+                </div>
+                <div class="gr">
+                    <img src="Images/7.jpg" alt="jett" class="add">
+                    <span> Jett Flyer </span>
+                    <span class="material-icons">call_missed</span>
+                </div>
+
+            </div>
+            <button class="btn">
+                +
+            </button>
+
+        </div>
+        <div id="third">
+            <nav class="flex">
+                <img src="Images/2.jpg" alt="img">
+                <span><h3>Annie Zukerburg</h3>
+                active now</span>
+                <ul>
+                    <li><span class="material-icons">call</span></li>
+                    <li><span class="material-icons">videocam</span></li>
+                    <li><span class="material-icons">more_horiz</span></li>
+                </ul>
+                <button id="bckbtn" onclick="back()">Back </button>
+            </nav>
+            
+            <br>
+            <hr width="95%" align="left">
+            <div id="scroll">
+                <section class="chat">
+                    <span class="left lcut"> Hii </span><span class="small">11:30am </span><br><br><br>
+                    <span class="right"> Hello </span> <span class="rsmall">11:31am </span><br><br><br>
+                    <span class="right rcut"> How are you ?? </span><span class="rsmall">11:31am </span><br><br><br>
+                    <span class="left "> I'm doing great !!!</span> <span class="small">11:32am </span><br><br><br>
+                    <span class="left lcut"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quos. </span> <span class="small">11:33am </span><br><br><br>
+                    <span class="right"> Lorem ipsum dolor sit amet. </span> <span class="rsmall">11:38am </span><br><br><br>
+                    <span class="right"> Lorem, ipsum dolor. </span><span class="rsmall">11:38am </span><br><br><br>
+                    <span class="right"> Lorem ipsum dolor, sit amet consectetur adipisicing.</span><span class="rsmall">11:39am </span><br><br><br>
+                    <span class="right rcut"> Lorem, ipsum dolor.</span><span class="rsmall">11:39am </span><br><br><br>
+                    <span class="left "> Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><span class="small">11:45am </span> <br><br><br>
+                    <span class="left lcut"> Lorem ipsum dolor sit </span> <span class="small">12:05pm </span><br><br><br>
+                    <span class="right rcut">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem!</span><span class="rsmall">12:10pm </span><br><br><br>
+                    <span class="left lcut"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint quo. Expedita animi in qui nemo dolores! Quia, quod sapiente?</span><span class="small">1:35pm </span> <br><br><br><br>
+                    <span class="right ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem! Lorem ipsum dolor sit amet.</span><span class="rsmall">2:55pm </span><br><br><br><br>
+                    <span class="right rcut">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem!</span><span class="rsmall">2:56pm </span><br><br><br>
+                    <span class="left "> Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> <span class="small">3:14pm </span><br><br><br>
+                    <span class="left lcut"> Lorem ipsum dolor sit </span> <span class="small">3:15pm </span><br><br><br>
+                    <span class="right"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> <span class="rsmall">3:45pm </span><br><br><br>
+                    <span class="right rcut"> Lorem ipsum dolor sit </span> <span class="rsmall">3:48pm </span><br><br><br>
+
+                </section>
+            </div>
+            <br>
+            <div id="footer">
+                <section align="center">
+                    <span class="material-icons">attach_file</span>&nbsp;
+                    <input type="text" placeholder="Type something here ..." id="input">
+                    <span class="material-icons">emoji_emotions</span> &nbsp;
+                    <span class="material-icons">mic</span>
+                </section>
+            </div>
+        </div>
+        <div id="fourth">
+            <nav class="flex">
+                <img src="Images/3.jpg" alt="img">
+                <span><h3>Laura Watson</h3>
+                active now</span>
+                <ul>
+                    <li><span class="material-icons">call</span></li>
+                    <li><span class="material-icons">videocam</span></li>
+                    <li><span class="material-icons">more_horiz</span></li>
+                </ul>
+                <button id="bkbtn2" onclick="backbtn()"><span class="material-icons">arrow_back</span></button>
+            </nav>
+            <br>
+            <hr width="95%" align="left">
+            <div id="scrol">
+                <section class="chat">
+                    <span class="left lcut"> Hii </span><span class="small">11:30am </span><br><br><br>
+                    <span class="right"> Hello </span> <span class="rsmall">11:31am </span><br><br><br>
+                    <span class="right rcut"> How are you ?? </span><span class="rsmall">11:31am </span><br><br><br>
+                    <span class="left "> I'm doing great !!!</span> <span class="small">11:32am </span><br><br><br>
+                    <span class="left lcut"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quos. </span> <span class="small">11:33am </span><br><br><br>
+                    <span class="right"> Lorem ipsum dolor sit amet. </span> <span class="rsmall">11:38am </span><br><br><br>
+                    <span class="right"> Lorem ipsum dolor, sit amet consectetur adipisicing.</span><span class="rsmall">11:39am </span><br><br><br>
+                    <span class="right rcut"> Lorem, ipsum dolor.</span><span class="rsmall">11:39am </span><br><br><br>
+                    <span class="left "> Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><span class="small">11:45am </span> <br><br><br>
+                    <span class="left lcut"> Lorem ipsum dolor sit </span> <span class="small">12:05pm </span><br><br><br>
+                    <span class="right rcut">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem!</span><span class="rsmall">12:10pm </span><br><br><br>
+                    <span class="left lcut"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, sint quo. Expedita animi in qui nemo dolores! Quia, quod sapiente?</span><span class="small">1:35pm </span> <br><br><br><br>
+                    <span class="right ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem! Lorem ipsum dolor sit amet.</span><span class="rsmall">2:55pm </span><br><br><br><br>
+                    <span class="right rcut">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem!</span><span class="rsmall">2:56pm </span><br><br><br>
+                    <span class="left "> Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> <span class="small">3:14pm </span><br><br><br>
+                    <span class="left lcut"> Lorem ipsum dolor sit </span> <span class="small">3:15pm </span><br><br><br>
+                    <span class="right"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> <span class="rsmall">3:45pm </span><br><br><br>
+                    <span class="right rcut"> Lorem ipsum dolor sit </span> <span class="rsmall">3:45pm </span><br><br><br>
+    
+                </section>
+            </div>
+            <br>
+            <div id="footer">
+                <section align="center">
+                    <span class="material-icons">attach_file</span>&nbsp;
+                    <input type="text" placeholder="Type something here ..." id="input">
+                    <span class="material-icons">emoji_emotions</span> &nbsp;
+                    <span class="material-icons">mic</span>
+                </section>
+            </div>
+        </div>
+
+
+    </main>
+   
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ced1829754.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
